@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIDEBIO</title>
+    <meta name="description"  content="sample text">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/sanitize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <div class="hero">
+        <!-- strongは重要な文字を強調するタグで1ページに1,2個 -->
+        <strong>Welcome <br>to <br> WIDEBIO!</strong>
+        <div class="hero-particles" id="particles-js"></div>
+        <!-- videoの中にsourceを入れることで何個もビデオを格納できる -->
+        <!-- autoplay属性は、自動で再生される loopは繰り返し mutedは音が出ないようにする　
+        preloadはHTMLが読み込まれたら即座にMP４の読み込みを開始する-->
+        <video autoplay loop muted preload>
+            <source src="assets/videos/main_video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- sectionの中だったらh1を入れてもOK 一つレベルが下がる　bodyの直下はダメ -->
+    <section class="section">
+        <h1 class="section-headline"> About "WIDEBIO"</h1>
+        <figure class="about"> 
+            <!-- alt属性は、表示されなかった場合、代わりにテキストを表示する -->
+            <img class="about-image"src="https://dummyimage.com/600x400/000/fff" alt="About image">
+            <figcaption class="about-caption">
+                <h2 class="about-headline">WIDEBIO って何？</h2>
+                <p class="about-description">
+                    食べることが大好きで、恵まれた生活ができている私たちが、<br>生きるために最も欠かせない
+                    「食」を持続可能にするために<br>食べることと私たちの生活とを結びつけ、多くの方と協力
+                    してできることを実行し続けていく団体！
+                </p>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="section section-secondary">
+        <h1 class="section-headline">Feature</h1>
+        <ul class="grid grid-col-4">
+            <li class="grid-item">
+                <!-- dl は見出しとデータを紐づける -->
+                <dl class="feature">
+                    <dt class="feature-headline">1.現場で「学び続ける」</dt>
+                    <dd class="feature-img">
+                        <img src="./assets/images/001-book.png" width="100" height="100" alt="Learing">
+
+                    </dd>
+                    <dd class="feture-description">
+                        私たちは既に食の全てをわかっているとは決して思わない。複雑だけど面白い食のシステムに向き合
+                        い続け、常に様々な立場の人の声に耳を傾ける姿勢を大切にしよう。
+                    </dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <!-- dl は見出しとデータを紐づける -->
+                <dl class="feature">
+                    <dt class="feature-headline">2.率先して「動き続ける」</dt>
+                    <dd class="feature-img">
+                        <img src="./assets/images/002-musculoskeletal.png" width="100" height="100" alt="Action">
+
+                    </dd>
+                    <dd class="feture-description">
+                        恵まれた生活ができている私たち、食べることが大好きな私たちにこそ、望ましい食と命のあり方を
+                        目指して行動し続ける責任がある。できることから、少しでも、一歩ずつ。どんな状況でも言い訳に
+                        逃げずに行動する姿勢を大切にしよう。
+                    </dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <!-- dl は見出しとデータを紐づける -->
+                <dl class="feature">
+                    <dt class="feature-headline">3.ミライを「考え続ける」</dt>
+                    <dd class="feature-img">
+                        <img src="./assets/images/003-virtual-reality.png"  width="100" height="100" alt="Visioning">
+
+                    </dd>
+                    <dd class="feture-description">
+                        課題を解決し、世の中を良い方向に導いていこうと行動しつつも、その先にある食それ自体と私たち
+                        の食生活のあり方がどのような状態であれば私たちにとって望ましいのか、私たちなりの最適解を考
+                        え続け、取り組みに反映させようとする姿勢を大切にしよう。
+                    </dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <!-- dl は見出しとデータを紐づける -->
+                <dl class="feature">
+                    <dt class="feature-headline">4.食と私たちをつなげる</dt>
+                    <dd class="feature-img">
+                        <img src="./assets/images/004-global-network.png" width="100" height="100" alt="Connecting">
+
+                    </dd>
+                    <dd class="feture-description">
+                        食材がどのように私たちの食卓までに至っているのかを知り、理解する取り組みをする。
+                        大きく複雑な食の社会問題がどのように私たちの日常生活と関わりがあるかを示し、率先し
+                        てできることを実行に移し続ける。私たちの取り組みを学生や食の界隈に関わる方などに発信し、「私たちが想う食のあり方」
+                        を伝え続ける。
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <section class="section">
+        <h1 class="section-headline">Article</h1>
+        <ul class="grid grid-col-3">
+            <li class="grid-item">
+                <!-- articleタグはひとまとまりで完結するコンテンツを作るときに使用
+                レベルが一つ下がるのでh1タグは使用可能 -->
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <span class="card-rabel">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-time" datetime="2022-12-01">2022.12.01
+                            <h1 class="card-headline">Title text text text text text text </h1>
+                            <p class="card-description">Text text text text text text text text text text text text</p>
+
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">WIDEBIO</dt>
+                            <dd class="avator-image">
+                                <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                            </dd>
+                        </dl>
+                    </a>
+                </article>
+            </li>
+
+            <li class="grid-item">
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <span class="card-rabel">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-time" datetime="2022-12-01">2022.12.01
+                            <h1 class="card-headline">Title text text text text text text </h1>
+                            <p class="card-description">Text text text text text text text text text text text text</p>
+
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">WIDEBIO</dt>
+                            <dd class="avator-image">
+                                <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                            </dd>
+                        </dl>
+                    </a>
+                </article>
+            </li>
+
+
+            <li class="grid-item">
+                <article class="card">
+                    <a href="#" class="card-link">
+                        <span class="card-rabel">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail">
+                        <div class="card-time" datetime="2022-12-01">2022.12.01
+                            <h1 class="card-headline">Title text text text text text text </h1>
+                            <p class="card-description">Text text text text text text text text text text text text</p>
+
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">WIDEBIO</dt>
+                            <dd class="avator-image">
+                                <img src="https://dummyimage.com/50x50/000/fff" alt="Author">
+                            </dd>
+                        </dl>
+                    </a>
+                </article>
+            </li>
+        </ul>
+
+        <div class="section-button">
+            <a href="#" class="button">
+                Bolg Page
+            </a>
+        </div>
+        
+    </section>
+
+    <section class="section section-secondary">
+        <h1 class="section-headline">Contact</h1>
+
+        <!-- form フォームでボタンを押して送るようなインタラクティブな要素を使うときにバックエンドとの連携がしやすくなる -->
+        <form class="form" action="">
+            <!-- tableタグはul,li dl,dt,dd　のようなセットで使うタグ -->
+            <table class="form-table">
+                <tr>
+                    <th>
+                        <label for="menu">
+                            Menu
+                        </label>
+                    </th>
+                    <td>
+                        <select class="select" id="menu">
+                        <option value="menu-1">Menu 1</option>
+                        <option value="menu-2">Menu 2</option>
+                        <option value="menu-3">Menu 3</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="name">
+                            Name
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="text" id="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="email">
+                            Emai
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="email" id="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Gender
+                    </th>
+                    <td>
+                        <!-- name="gender"でグループ化して、複数選択が出来なくなる -->
+                        <!-- labelの仕方が一つ前と違う…？ -->
+                        <label class="radio" >
+                            <input type="radio" name="gender" value="male"> Male
+
+                        </label>
+                        <label  class="radio">
+                            <input type="radio" name="gender" value="female"> Female
+
+                        </label>
+                        <label  class="radio">
+                            <input type="radio" name="gender" value="other"> Other
+
+                        </label>
+                        
+                        
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="detail">
+                            Detail
+                        </label>
+                    </th>
+                    <td>
+                        <textarea class="textarea" id="detail" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+
+            <!-- aタグは移動するためだけだが、buttonタグは押すことで何かしらアクションを起こす -->
+            <!-- submitはformと相性がいい -->
+            
+            <div class="form-button">
+                <button  class="button button-submission" type="submit">Submit</button>
+            </div>
+        </form>
+    
+    </section>
+
+    <!-- asideはメインコンテンツの補完をするために使うタグ -->
+    <aside class="works">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+        <img src="https://dummyimage.com/150x80/ccc/fff" alt="logo">
+
+    </aside>
+
+    <!-- footerはフッターを作るためのタグ -->
+    <footer class="footer">
+        <figure class="footer-map">
+            <!-- iframe 外部のweb情報を埋め込むタグ -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.710812459427!2d139.7196485!3d35.7087334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe713f3362f7db994!2z5pep56iy55Sw5aSn5a2mIDflj7fppKg!5e0!3m2!1sja!2sjp!4v1668604965724!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <figcaption class="footer-mapinfo">
+                <div class="footer-maplogo">
+                    WIDEBIO Inc.
+
+                </div>
+                <address class="footer-mapaddress">
+                    〒169-0051 東京都新宿区西早稲田 <br>
+                    <!-- targetの_blankでクリックすると別タグに行く -->
+                    <a href="https://goo.gl/maps/8qNuXM9qZDUzEZyf9" target="_blank">Google Map</a>
+                </address>
+            </figcaption>
+        </figure>
+        
+        <!-- hrはラインを作ることができるタグ -->
+        <hr class="footer-line">
+        <!-- smallはコピーライトを作るためだけのタグ -->
+        <small class="footer-copy">Copyright ©WIDEBIO Inc.</small>
+    </footer>
+
+
+    <script src="assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
